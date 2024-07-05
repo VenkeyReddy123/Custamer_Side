@@ -1,0 +1,66 @@
+.dside {
+    width:250px; /* New width on hover */
+
+    transition-property: width, height, background-color; /* Specify transition properties */
+    transition-duration:1s; /* Duration of the transition */
+    transition-timing-function: linear; /* Timing function for the transition */
+    transition-delay:0s; /* Delay before the transition starts */
+}
+.ddside{
+    width:0px; 
+   
+     transition-property: width, height, background-color;
+     transition-duration:1s; /* Duration of the transition */
+     transition-timing-function: linear; /* Timing function for the transition */
+     transition-delay:0s; /* Delay before the transition starts */
+}
+.dsideee {
+    width:290px; /* New width on hover */
+    transition-property: width, height, background-color; /* Specify transition properties */
+    transition-duration:1s; /* Duration of the transition */
+    transition-timing-function: linear; /* Timing function for the transition */
+    transition-delay:0s; /* Delay before the transition starts */
+}
+
+.ee{
+    color:rgb(255, 0, 191);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:italic;
+    
+
+}
+.com{
+    font-family:'Times New Roman', Times, serif;
+    margin-left:7px;
+    color:white;
+    
+    /* box-shadow:0px 1px 0px 1px red; */
+}
+.web{
+    box-shadow:0px 0px 10px lightgrey;
+}
+.web2{
+    box-shadow:0px 10px 45px lightgray ;
+}
+.nav-links{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.nav-linkss{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.nav-links:hover{
+  cursor: pointer;
+  padding:5px;
+  border:2px solid lightgray;
+  background-color:lightgray;
+ 
+}
+.nav-linkss:hover{
+    cursor: pointer;
+    padding:10px;
+  
+    border:2px solid lightgray;
+    background-color:lightgray;
+  }
+
+

@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+  }
+  
+  .flip-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card.filter-open {
+    transform: translateX(-200px); /* Slide in from left to right */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+  }
+  
+  .flip-card-back {
+    background-color: #ccc;
+    transform: rotateY(180deg);
+  }
+  
+  .additional-content {
+    flex: 1;
+    background-color: lightgray; /* Just for visualization */
+  }
+  
+  .filter-options {
+    position: absolute;
+    top: 0;
+    left: -200px; /* Position off-screen initially */
+    width: 200px;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.5s;
+    overflow-y: auto; /* Allow content to overflow */
+  }
+  
+  .flip-card.filter-open .filter-options {
+    left: 0; /* Slide in from left to right */
+  }
+      

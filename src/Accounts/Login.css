@@ -1,0 +1,20 @@
+.linear{
+    background: linear-gradient(white);
+    color:'black'
+}
+.lineaar{
+    background: rgb(0,0,0,0.0);
+}
+.pw{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.cnames:hover{
+    color: black;
+}
+.cnames{
+    color: whitesmoke;
+   
+}
+.cnameback{
+    background-color: black;
+}

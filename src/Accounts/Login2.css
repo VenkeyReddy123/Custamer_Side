@@ -1,0 +1,140 @@
+/* *, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ededed;
+} */
+.input, .button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.cont {
+    overflow: hidden;
+    position: relative;
+    height:550px;
+    margin: 0 auto 100px;
+    background: #fff;
+}
+
+
+.button {
+    display: block;
+    margin: 0 auto;
+    padding:10px;
+   font-family: 'Times New Roman', Times, serif;
+    border-radius:10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+.img {
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+    padding-top: 360px;
+}
+.img:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
+    background-size: cover;
+    transition: transform 1.2s ease-in-out;
+}
+.img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.img__text {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    color: #fff;
+    transition: transform 1.2s ease-in-out;
+}
+
+
+.img__btn {
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    width: 100px;
+    height: 36px;
+    margin: 0 auto;
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
+.img__btn:after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+
+.h2 {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    font-family:'';
+}
+.label {
+    display: block;
+    width: 260px;
+    margin: 25px auto 0;
+    
+}
+.label .span {
+    font-size: 12px;
+    color: #cfcfcf;
+    text-transform: uppercase;
+}
+.input {
+    display: block;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.forgot-pass {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #cfcfcf;
+}
+.submittt {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #d4af7a;
+    text-transform: uppercase;
+    
+}
+
